@@ -16,6 +16,7 @@ public class ManipulaNumbers {
             System.out.println("1 - Maior de 2 números");
             System.out.println("2 - Ordenar valores em decrescente");
             System.out.println("3 - Somar impares, multiplica pares");
+            System.out.println("4 - Trocar Numeros");
             
             System.out.println("0 - Sair");
             System.out.println("Selecione a opção pretendida");
@@ -35,6 +36,10 @@ public class ManipulaNumbers {
                     break;
                 case 3:
                     somaImparesMultiplicaPares();
+                    break;
+                case 4:
+                    levalores("Insira o numA:","Insira o numB");
+                    TrocaNumero.troca(x,y);
                     break;
                 default : System.out.println("Insira opção válida!");
             }
